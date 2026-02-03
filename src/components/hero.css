@@ -1,0 +1,204 @@
+/* =====================================================
+   HERO — COMEÇA APÓS O MENU
+===================================================== */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - var(--altura-menu));
+
+  padding-top: var(--altura-menu);
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 🔥 FUNDO REAL EM PNG */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche sem distorcer */
+}
+
+/* camada suave para leitura */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 246, 231, 0.55),
+    rgba(247, 246, 231, 0.75)
+  );
+  z-index: 0;
+}
+
+
+/* restante do CSS continua igual */
+
+/* =====================================================
+   GRID DAS IMAGENS (5)
+===================================================== */
+
+.hero-images.cinco {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.3fr 1fr 0.8fr;
+  align-items: center;
+  justify-content: center; /* 🔥 IMPORTANTE */
+  gap: 20px;
+
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;          /* 🔥 GARANTE CENTRALIZAÇÃO */
+  padding: 30px;
+}
+
+
+/* =====================================================
+   IMAGENS
+===================================================== */
+
+.hero-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* laterais */
+.lateral {
+  opacity: 0.9;
+}
+
+/* laterais distantes */
+.distante {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+/* =====================================================
+   IMAGEM CENTRAL
+===================================================== */
+
+.hero-center {
+  position: relative;
+  height: 620px;
+}
+
+.principal {
+  height: 100%;
+}
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.65)
+  );
+  border-radius: 18px;
+  z-index: 1;
+}
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-shadow: 0 6px 14px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  max-width: 420px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #4f7f52;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+  .hero-images.cinco {
+    grid-template-columns: 1fr;
+  }
+
+  .lateral,
+  .distante {
+    display: none;
+  }
+
+  .hero-center {
+    height: 520px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}

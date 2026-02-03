@@ -1,0 +1,88 @@
+.sobre {
+  background: #f6f7ef;
+  padding: 100px 20px;
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-titulo {
+  text-align: center;
+  font-size: 36px;
+  color: #2f3e2f;
+  margin-bottom: 50px;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.sobre-coluna p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #2f3e2f;
+}
+
+.sobre-coluna h3 {
+  margin-bottom: 15px;
+  color: #3a6b3a;
+}
+
+.sobre-lista {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.sobre-lista li {
+  margin-bottom: 8px;
+  color: #2f3e2f;
+}
+
+/* DIFERENCIAL */
+.sobre-diferencial {
+  background: #e7efe2;
+  padding: 40px;
+  border-radius: 16px;
+  margin: 80px 0 50px;
+  text-align: center;
+}
+
+.sobre-diferencial h3 {
+  color: #2f5f2f;
+  margin-bottom: 15px;
+}
+
+.sobre-diferencial p {
+  max-width: 800px;
+  margin: 0 auto 12px;
+  line-height: 1.7;
+}
+
+.sobre-natureza {
+  font-weight: 600;
+  color: #2f5f2f;
+}
+
+/* DOAÇÃO */
+.sobre-doacao {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2f3e2f;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre {
+    padding: 70px 15px;
+  }
+}

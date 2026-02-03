@@ -1,0 +1,79 @@
+.menu {
+  height: var(--altura-menu);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+}
+
+/* 🔥 estrutura correta */
+.menu-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+}
+
+/* logo continua normal */
+.logo {
+  height: 150px;
+}
+
+/* 🔥 navegação agora ocupa o espaço e centraliza */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;                     /* <<< ISSO substitui o margin-left */
+  align-items: center;
+  transform: translateY(8px);  /* mantém seu ajuste fino */
+}
+
+.nav a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #2f3e2f;
+  font-weight: 500;
+}
+
+/* Botão mobile */
+.hamburguer {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+     margin-left: auto; /* 🔥 empurra para o canto direito */
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #f4f8f3;
+    display: none;
+    flex-direction: column;
+    transform: none; /* evita deslocamento no mobile */
+  }
+
+  .nav.ativo {
+    display: flex;
+  }
+
+  .nav a {
+    margin-left: 0;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+}
