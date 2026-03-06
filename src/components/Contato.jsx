@@ -40,6 +40,31 @@ export default function Contato() {
 
             <div className="contato-bloco">
               <h3>
+                <i className="fa-brands fa-instagram"></i> Instagram
+              </h3>
+
+              <a
+                href="https://www.instagram.com/escoladanaturezapindoretama/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @escoladanaturezapindoretama
+              </a>
+
+              <br />
+
+              <a
+                href="https://www.instagram.com/institutodanaturezapindoretama/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @institutodanaturezapindoretama
+              </a>
+
+            </div>
+
+            <div className="contato-bloco">
+              <h3>
                 <i className="fa-solid fa-building"></i> CNPJ
               </h3>
               <p>59.637.643/0001-93</p>

@@ -38,15 +38,15 @@ export default function Diferencial() {
   return (
     <section className="diferencial reveal" id="diferencial">
       <div className="diferencial-container">
-        <h2 className="diferencial-titulo">Nosso grande diferencial</h2>
+        <h2 className="diferencial-titulo">Acreditamos</h2>
 
         <div className="diferencial-grid">
           {/* TEXTO */}
           <div className="diferencial-texto">
             <p>
-              Acreditamos que o <strong>cuidado, o envolvimento e o
-              ensinamento da família</strong> são cruciais para o êxito
-              no tratamento da criança.
+              Acreditamos que o cuidado, o envolvimento e a
+              educação parental  <strong>são cruciais para o êxito
+              no tratamento da criança. </strong>
             </p>
 
             <p>

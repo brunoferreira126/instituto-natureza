@@ -1,0 +1,105 @@
+.equipe {
+  width: 100%;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.equipe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.equipe-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* PRESIDENTE */
+
+.presidente {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.presidente-img {
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.presidente-texto {
+  flex: 1;
+}
+
+.presidente-texto h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.presidente-texto p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* PROFISSIONAIS */
+
+.profissionais {
+  margin-top: 30px;
+}
+
+.profissionais h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.lista-profissionais {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.lista-profissionais li {
+  margin-bottom: 8px;
+}
+
+/* LOGO FINAL */
+
+.logo-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logo-final img {
+  width: 160px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .presidente {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presidente-img {
+    width: 220px;
+  }
+
+  .lista-profissionais {
+    columns: 1;
+  }
+
+  .equipe-titulo {
+    font-size: 2rem;
+  }
+
+  .presidente-texto h3 {
+    font-size: 1.3rem;
+  }
+
+}

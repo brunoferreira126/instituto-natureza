@@ -1,0 +1,95 @@
+.leituras {
+  padding: 80px 20px;
+  background: #f9fbf7;
+  text-align: center;
+}
+
+.titulo-leituras {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitulo-leituras {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.livros-container {
+  display: flex;
+  gap: 30px;
+}
+
+.livro-card {
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.livro-card:hover {
+  transform: translateY(-5px);
+}
+
+.livro-card img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.livro-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.livro-card span {
+  font-size: 14px;
+  color: #777;
+}
+
+.livro-card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.seta {
+  background: #2d6a4f;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.seta:hover {
+  background: #1b4332;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .livros-container {
+    justify-content: center;
+  }
+
+  .livro-card {
+    width: 90%;
+  }
+
+  .livros-container .livro-card:nth-child(2),
+  .livros-container .livro-card:nth-child(3) {
+    display: none;
+  }
+
+}

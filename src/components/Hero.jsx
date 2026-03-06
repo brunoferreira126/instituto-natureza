@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./hero.css";
 
 function Hero() {
-  const totalImagens = 83;
+  const totalImagens = 80;
   const intervaloTempo = 4000;
   const [imagemAtual, setImagemAtual] = useState(1);
 
@@ -52,14 +52,7 @@ function Hero() {
             </p>
 
             <div className="hero-buttons">
-              <a
-                href="https://wa.me/5585998513856"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-primary"
-              >
-                Quero me Matricular
-              </a>
+             
 
               <a
                 href="https://wa.me/5585998513856"
@@ -67,7 +60,7 @@ function Hero() {
                 rel="noreferrer"
                 className="btn-secondary"
               >
-                Falar com a Escola
+                Fale Conosco
               </a>
             </div>
           </div>

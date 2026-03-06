@@ -25,9 +25,13 @@ function Menu() {
         {/* Navegação */}
         <nav className={`nav ${aberto ? "ativo" : ""}`}>
           <a href="#hero" onClick={() => setAberto(false)}>Início</a>
-          <a href="#sobre" onClick={() => setAberto(false)}>Sobre</a>
-           <a href="#diferencial" onClick={() => setAberto(false)}>Diferencial</a>
-            <a href="#impacto" onClick={() => setAberto(false)}>Impacto</a>
+          <a href="#sobre" onClick={() => setAberto(false)}>Quem Somos</a>
+          <a href="#diferencial" onClick={() => setAberto(false)}>Acreditamos</a>
+          <a href="#missao" onClick={() => setAberto(false)}>Missão, Visão e Valores</a>
+          <a href="#impacto" onClick={() => setAberto(false)}>Impacto</a>
+          <a href="#escola" onClick={() => setAberto(false)}>Escola da Natureza</a>
+          <a href="#equipe" onClick={() => setAberto(false)}>Equipe</a>
+          <a href="#leituras" onClick={() => setAberto(false)}>Leituras</a>
           <a href="#contato" onClick={() => setAberto(false)}>Contatos</a>
          
         </nav>
