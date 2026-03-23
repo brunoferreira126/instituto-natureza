@@ -1,16 +1,36 @@
 import "./equipe.css";
 
 export default function Equipe() {
+
+  const profissionais = [
+   
+    { nome: "Sandra Pinheiro", cargo: "Fonoaudióloga, Enfermeira, Psicomotricista", img: "/equipe/sandra.jpeg" },
+    { nome: "Daniel Muniz", cargo: "Educador Físico e Psicomotricista", img: "/equipe/daniel.jpeg" },
+    { nome: "Vitória Barbosa", cargo: "Fisioterapeuta", img: "/equipe/vitoria.jpeg" },
+    { nome: "Gabriela Miranda", cargo: "Veterinária", img: "/equipe/gabriela.jpeg" },
+    { nome: "Mateus Rocha", cargo: "Equitador", img: "/equipe/mateus.jpeg" },
+    { nome: "Breno Pinheiro", cargo: "Veterinário", img: "/equipe/breno.jpeg" },
+    { nome: "Levi Soares", cargo: "Estagiário de Fisioterapia", img: "/equipe/levi.jpeg" },
+    { nome: "Mariana Barros", cargo: "Estagiária de Enfermagem", img: "/equipe/mariana.jpeg" },
+    { nome: "Larissa Barbosa", cargo: "Estagiária de Enfermagem", img: "/equipe/larissa.jpeg" },
+    { nome: "Saulo Pinheiro", cargo: "Menor Aprendiz", img: "/equipe/saulo.jpeg" },
+    { nome: "Augusto Pinheiro", cargo: "Menor Aprendiz", img: "/equipe/augusto.jpeg" },
+    { nome: "Maycon", cargo: "Menor Aprendiz PCD", img: "/equipe/maycon.jpeg" },
+    { nome: "Sergio", cargo: "Casqueador", img: "/equipe/sergio.jpeg" },
+    { nome: "Carlos", cargo: "Serviços Gerais", img: "/equipe/carlos.jpeg" },
+    { nome: "Cristian", cargo: "Serviços Gerais", img: "/equipe/cristian.jpeg" },
+    { nome: "Nenem", cargo: "Conservação e Limpeza", img: "/equipe/nenem.jpeg" },
+    { nome: "Celma", cargo: "Conservação e Limpeza", img: "/equipe/celma.jpeg" },
+  ];
+
   return (
     <section className="equipe" id="equipe">
-
       <div className="equipe-container">
 
         <h2 className="equipe-titulo">Nossa Equipe</h2>
 
         {/* PRESIDENTE */}
         <div className="presidente">
-
           <img
             src="/equipe/raison.jpg"
             alt="Raison Pinheiro"
@@ -18,7 +38,6 @@ export default function Equipe() {
           />
 
           <div className="presidente-texto">
-
             <h3>Raison Pinheiro – Presidente do Instituto da Natureza</h3>
 
             <p>
@@ -37,71 +56,32 @@ export default function Equipe() {
               para escolas, é palestrante, consultor educacional, mantenedor da
               Escola da Natureza e presidente do Instituto da Natureza.
             </p>
-
           </div>
-
         </div>
 
-        {/* PROFISSIONAIS */}
+        {/* PROFISSIONAIS COM FOTO */}
         <div className="profissionais">
 
           <h3>Nossos Profissionais</h3>
 
-          <ul className="lista-profissionais">
-
-            <li><strong>Raison Pinheiro</strong> – Psicólogo e Psicopedagogo</li>
-
-            <li><strong>Sandra Pinheiro</strong> – Fonoaudióloga, Enfermeira, Psicomotricista</li>
-
-            <li><strong>Daniel Muniz</strong> – Educador Físico e Psicomotricista</li>
-
-            <li><strong>Vitória Barbosa</strong> – Fisioterapeuta</li>
-
-            <li><strong>Gabriela Miranda</strong> – Veterinária</li>
-
-            <li><strong>Mateus Rocha</strong> – Equitador</li>
-
-            <li><strong>Breno Pinheiro</strong> – Veterinário</li>
-
-            <li><strong>Levi Soares</strong> – Estagiário de Fisioterapia</li>
-
-            <li><strong>Mariana Barros</strong> – Estagiária de Enfermagem</li>
-
-            <li><strong>Larissa Barbosa</strong> – Estagiária de Enfermagem</li>
-
-            <li><strong>Saulo Pinheiro</strong> – Menor Aprendiz</li>
-
-            <li><strong>Augusto Pinheiro</strong> – Menor Aprendiz</li>
-
-            <li><strong>Maycon</strong> – Menor Aprendiz</li>
-
-            <li><strong>Sergio</strong> – Casqueador</li>
-
-            <li><strong>Carlos</strong> – Serviços Gerais</li>
-
-            <li><strong>Cristian</strong> – Serviços Gerais</li>
-
-            <li><strong>Nenem</strong> – Conservação e Limpeza</li>
-
-            <li><strong>Celma</strong> – Conservação e Limpeza</li>
-
-          </ul>
+          <div className="grid-profissionais">
+            {profissionais.map((p, index) => (
+              <div className="card-profissional" key={index}>
+                <img src={p.img} alt={p.nome} />
+                <h4>{p.nome}</h4>
+                <p>{p.cargo}</p>
+              </div>
+            ))}
+          </div>
 
         </div>
 
         {/* LOGO FINAL */}
         <div className="logo-final">
-
-          <img
-            src="/logo/LOGO.png"
-            alt="Instituto da Natureza"
-          />
-
+          <img src="/logo/LOGO.png" alt="Instituto da Natureza" />
         </div>
 
       </div>
-
     </section>
   );
 }
-

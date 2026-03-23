@@ -1,7 +1,6 @@
 .equipe {
-  width: 100%;
-  padding: 60px 20px;
-  background: #f9f9f9;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f4f8f3, #ffffff);
 }
 
 .equipe-container {
@@ -11,23 +10,26 @@
 
 .equipe-titulo {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #1f3d2b;
 }
 
 /* PRESIDENTE */
-
 .presidente {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .presidente-img {
-  width: 280px;
-  border-radius: 12px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .presidente-texto {
@@ -35,71 +37,98 @@
 }
 
 .presidente-texto h3 {
-  font-size: 1.6rem;
+  font-size: 22px;
   margin-bottom: 15px;
+  color: #2d5a40;
 }
 
 .presidente-texto p {
   margin-bottom: 10px;
+  color: #555;
   line-height: 1.6;
 }
 
 /* PROFISSIONAIS */
-
-.profissionais {
-  margin-top: 30px;
-}
-
 .profissionais h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #2d5a40;
 }
 
-.lista-profissionais {
-  columns: 2;
-  list-style: none;
-  padding: 0;
+/* GRID */
+.grid-profissionais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 
-.lista-profissionais li {
-  margin-bottom: 8px;
+/* CARD */
+.card-profissional {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card-profissional:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* IMAGEM */
+.card-profissional img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top; /* 🔥 prioriza o rosto */
+}
+
+/* NOME */
+.card-profissional h4 {
+  font-size: 16px;
+  color: #1f3d2b;
+  margin-bottom: 5px;
+}
+
+/* CARGO */
+.card-profissional p {
+  font-size: 14px;
+  color: #777;
 }
 
 /* LOGO FINAL */
-
 .logo-final {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .logo-final img {
-  width: 160px;
+  width: 180px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.logo-final img:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
-
   .presidente {
     flex-direction: column;
     text-align: center;
   }
 
   .presidente-img {
-    width: 220px;
-  }
-
-  .lista-profissionais {
-    columns: 1;
+    width: 200px;
+    height: 200px;
   }
 
   .equipe-titulo {
-    font-size: 2rem;
+    font-size: 28px;
   }
-
-  .presidente-texto h3 {
-    font-size: 1.3rem;
-  }
-
 }

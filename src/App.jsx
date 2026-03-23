@@ -9,6 +9,7 @@ import MissaoVisaoValores from "./components/MissaoVisaoValores";
 import Impacto from "./components/Impacto";
 import EscolaNatureza from "./components/EscolaNatureza";
 import Equipe from "./components/Equipe";  
+import Espaco from "./components/Espaco";
 import Leituras from "./components/Leituras";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
@@ -51,6 +52,9 @@ function App() {
       
       {/* Equipe */}
       <Equipe />
+
+      {/* Nosso Espaço */}
+      <Espaco />
 
       {/* Leituras Recomendadas */}
       <Leituras />
