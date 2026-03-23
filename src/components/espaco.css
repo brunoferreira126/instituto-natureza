@@ -67,3 +67,19 @@
     height: 160px;
   }
 }
+
+
+.btn-ver-mais {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-ver-mais:hover {
+  background: #1b4332;
+}
