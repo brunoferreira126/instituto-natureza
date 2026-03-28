@@ -9,7 +9,6 @@ export default function Equipe() {
     { nome: "Vitória Barbosa", cargo: "Fisioterapeuta", img: "/equipe/vitoria.jpeg" },
     { nome: "Gabriela Miranda", cargo: "Veterinária", img: "/equipe/gabriela.jpeg" },
     { nome: "Mateus Rocha", cargo: "Equitador", img: "/equipe/mateus.jpeg" },
-    { nome: "Breno Pinheiro", cargo: "Veterinário", img: "/equipe/breno.jpeg" },
     { nome: "Levi Soares", cargo: "Estagiário de Fisioterapia", img: "/equipe/levi.jpeg" },
     { nome: "Mariana Barros", cargo: "Estagiária de Enfermagem", img: "/equipe/mariana.jpeg" },
     { nome: "Larissa Barbosa", cargo: "Estagiária de Enfermagem", img: "/equipe/larissa.jpeg" },
@@ -19,8 +18,7 @@ export default function Equipe() {
     { nome: "Sergio", cargo: "Casqueador", img: "/equipe/sergio.jpeg" },
     { nome: "Carlos", cargo: "Serviços Gerais", img: "/equipe/carlos.jpeg" },
     { nome: "Cristian", cargo: "Serviços Gerais", img: "/equipe/cristian.jpeg" },
-    { nome: "Nenem", cargo: "Conservação e Limpeza", img: "/equipe/nenem.jpeg" },
-    { nome: "Celma", cargo: "Conservação e Limpeza", img: "/equipe/celma.jpeg" },
+    
   ];
 
   return (

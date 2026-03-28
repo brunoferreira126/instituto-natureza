@@ -19,7 +19,7 @@ export default function Footer() {
           <ul>
             <li><a href="#hero">Início</a></li>
             <li><a href="#sobre">Quem Somos</a></li>
-            <li><a href="#diferencial">Nosso Diferencial</a></li>
+            <li><a href="#diferencial">Acreditamos</a></li>
             <li><a href="#impacto">Nosso Impacto</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
